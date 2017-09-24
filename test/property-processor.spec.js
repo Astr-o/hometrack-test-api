@@ -185,10 +185,28 @@ describe('property-processor module', () => {
                     "suburb": "Brisbane"
                 },
                 concatAddress: "25 Mary St Brisbane QLD 4000"
-            }
+            },
+            {
+                address: {
+                    "street": "James St",
+                    "suburb": "Sydney"
+                },
+                concatAddress: "James St Sydney"
+            },
+            {
+                address: {
+                    "buildingNumber": "360",
+                    "postcode": "3000",
+                    "state": "VIC",
+                    "street": "Elizabeth St",
+                    "suburb": "Melbourne",
+                    "unitNumber": "Level 28"
+                },
+                concatAddress: "Level 28 360 Elizabeth St Melbourne VIC 3000"
+            },
         ];
 
-        it('Should concatinate address object to string', () => {
+        it('Should concatinate address object to string correctly', () => {
             testAddresses.forEach(addr => {
                 const concatAddress = propertyProcessor.concatAddress(addr.address);
 
