@@ -21,7 +21,9 @@
     },
     "homepage": "https://github.com/Astr-o/hometrack-test-api#readme",
     "dependencies": {
-        "express": "^4.15.4"
+        "body-parser": "^1.18.2",
+        "express": "^4.15.4",
+        "morgan": "^1.8.2"
     },
     "devDependencies": {
         "chai": "^4.1.2",
