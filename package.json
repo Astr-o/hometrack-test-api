@@ -15,7 +15,7 @@
         "url": "git+https://github.com/Astr-o/hometrack-test-api.git"
     },
     "author": "Kroum Klutchkov <kroum.klutchkov@gmail.com>",
-    "license": "ISC",
+    "license": "MIT",
     "bugs": {
         "url": "https://github.com/Astr-o/hometrack-test-api/issues"
     },
