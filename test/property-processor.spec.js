@@ -197,6 +197,13 @@ describe('property-processor module', () => {
             });
         });
 
+        it('Should concatinate empty address object to empty string', () => {
+            const concatAddress = propertyProcessor.concatAddress({});
+
+            expect(concatAddress).to.be.a('String');
+            expect(concatAddress).to.equal('');
+        });
+
         it('Should throw an error when typeof propertyData is not an object', () => {
             expect(propertyProcessor.filterHtvCompleteProperties.bind({}))
                 .to.throw(/^Validation Error:*/, 'Expected to throw "Validation Error');
