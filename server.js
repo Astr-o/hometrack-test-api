@@ -34,7 +34,7 @@ app.post('/', (req, res, next) => {
 // default error handler
 app.use((err, req, res, next) => {
     console.error(err.message);
-    console.debug(err.stack);
+    console.info(err.stack);
 
     // handle body parser parse error 
     if (err.type === 'entity.parse.failed') {
