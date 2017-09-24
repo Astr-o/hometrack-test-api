@@ -7,7 +7,7 @@ module.exports.filterHtvCompleteProperties = function filterHtvCompletePropertie
     }
 
     return propertyData.filter(prop => prop.type === 'htv' && prop.workflow === 'completed');
-}
+};
 
 /**
  * Concatinate Address object to string
@@ -28,5 +28,4 @@ module.exports.concatAddress = function concatAddress(address) {
         ]
         .filter(i => i)
         .join(' ');
-
-}
+};

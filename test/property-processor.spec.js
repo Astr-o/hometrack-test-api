@@ -132,17 +132,17 @@ describe('property-processor module', () => {
                 "type": "htv",
                 "workflow": "cancelled"
             }
-        ]
+        ];
 
         it('Should only return properties where type is htv', () => {
-            const filteredProperties = propertyProcessor.filterHtvCompleteProperties(testProperties)
+            const filteredProperties = propertyProcessor.filterHtvCompleteProperties(testProperties);
 
             expect(filteredProperties).to.be.a('Array');
             expect(filteredProperties).to.all.have.property('type', 'htv');
         });
 
         it('Should only return properties where workflow is completed', () => {
-            const filteredProperties = propertyProcessor.filterHtvCompleteProperties(testProperties)
+            const filteredProperties = propertyProcessor.filterHtvCompleteProperties(testProperties);
 
             expect(filteredProperties).to.be.a('Array');
             expect(filteredProperties).to.all.have.property('workflow', 'completed');
