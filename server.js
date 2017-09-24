@@ -31,6 +31,11 @@ app.post('/', (req, res, next) => {
     }
 });
 
+// 404 - handler
+app.use('*', (req, res) => {
+    res.status(404).send({ error: 'Resource not found' });
+});
+
 // default error handler
 app.use((err, req, res, next) => {
     console.error(err.message);
