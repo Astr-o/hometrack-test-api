@@ -1,0 +1,26 @@
+{
+    "name": "hometrack-test-api",
+    "version": "1.0.0",
+    "description": "Hometrack Interview Test API",
+    "main": "server.js",
+    "engines": {
+        "node": "6.11.3"
+    },
+    "scripts": {
+        "start": "node server.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Astr-o/hometrack-test-api.git"
+    },
+    "author": "Kroum Klutchkov <kroum.klutchkov@gmail.com>",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Astr-o/hometrack-test-api/issues"
+    },
+    "homepage": "https://github.com/Astr-o/hometrack-test-api#readme",
+    "dependencies": {
+        "express": "^4.15.4"
+    }
+}
